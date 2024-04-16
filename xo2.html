@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Game</title>
+    <style>
+        .container{
+            display: flex;
+            display: grid;
+            height: 569px;
+            grid-template: repeat(3,185px)/repeat(3,185px);
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+           }
+        div > div{
+            border: 3px solid red;
+            background-color: yellow;
+            line-height: 175px;
+            text-align: center; 
+            font-weight: bold;
+            font-size: 155px;
+            cursor: pointer;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* box-shadow: 15px 15px 33px red; */
+        }
+        button{
+            width: 155px;
+            height: 44px;
+            border-radius: 22px;
+            font-weight: bold;
+            font-size: 25px;
+            color: white;
+            background-color: purple;
+            border: none; 
+        }  
+    </style>
+</head>
+<body style="background-color: aqua;"> 
+    <div class="container">
+        <div id="box1" class="box" onclick="box(1)"></div>
+        <div id="box2" class="box" onclick="box(2)"></div>
+        <div id="box3" class="box" onclick="box(3)"></div>
+        <div id="box4" class="box" onclick="box(4)"></div> 
+        <div id="box5" class="box" onclick="box(5)"></div>
+        <div id="box6" class="box" onclick="box(6)"></div>
+        <div id="box7" class="box" onclick="box(7)"></div>
+        <div id="box8" class="box" onclick="box(8)"></div> 
+        <div id="box9" class="box" onclick="box(9)"></div>
+    </div><br> 
+    <div style="display: flex;justify-content: center;" onclick="restart()">
+    <button style="cursor: pointer;"> Restart </button>
+    </div>
+    <script src="xo2.js"></script>
+</body>  
+</html> 
